@@ -1,0 +1,281 @@
+html {
+    --scroll-behavior: smooth; /*Плавная прокрутка к якорям*/
+    scroll-behavior: smooth;
+   }
+
+* {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-seri;
+    font-weight: normal;
+    font-weight: lighter;
+    
+}
+
+header {
+    opacity: 0;
+    animation: ani 1.5s forwards;
+  }
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+
+.box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+.box_text {
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header li {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    transition: box-shadow .5s;
+    backdrop-filter: blur(4px);
+    -wbkit-backdrop-filter: blur(4px);
+    z-index: 9999;
+    
+}
+
+header .logotip {
+    font-size: 22px;
+    text-transform: uppercase;
+    transition: .5s;
+    color: rgb(250, 235, 215);
+    }
+
+header .logotip:hover {
+    transform: scale(1.2);
+    color: rgb(189, 155, 212);
+    text-shadow: 11px 10pt 1px rgba(247, 228, 144, 0.9);
+    }
+
+header nav ul li {
+    position: relative;
+    float: left;    
+    
+}
+
+header nav ul li a {
+    padding: 15px;
+    font-size: 16px;
+    display: block;
+    color: rgb(250, 235, 215);
+    text-decoration: none;
+    
+    
+}
+
+body .box_text:hover {
+    color: rgb(247, 228, 144);
+    background-color: rgba(58, 60, 68, 0.733);
+    
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: rgba(58, 60, 68, 0.603);
+    display: none;
+    
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(29, 30, 34, 0.459);
+    left: -41px;
+    width: 220px;    
+    
+}
+
+nav ul li ul li:hover {
+    color: rgb(247, 228, 144);
+    background-color: rgba(104, 107, 121, 0.397);
+    
+}
+
+
+nav ul li ul li ul {
+    left: 220px;
+    top: 0;
+    
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+.header_mini{
+    background-color:rgba(29, 30, 34, 0.7);
+    box-shadow: 0px 0px 25px -8px rgb(255, 255, 255);
+    transition: box-shadow .8s, padding-bottom;
+}
+header a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: rgb(29, 30, 34);
+    padding-top: 0;   
+    background-position-y: 0px;
+    background-image: url("earthbackground.jpg");
+    background-size: 100%;
+    background-repeat:no-repeat;
+    position: relative;
+
+}
+ .twoblock {
+    margin-top: 10%;
+ }
+
+.galery {
+    overflow: hidden;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.galery .img {
+    width: 100%;
+    max-width: 34rem;
+    height: 22rem;
+    display: inline-block;
+    overflow: hidden;
+    margin: 1rem;
+    cursor: pointer;
+    style="height: auto"
+}
+
+.galery .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+}
+
+
+
+footer {
+    z-index: 1000;
+    position: relative;   
+    width: 100%;
+    height: 40vh;
+    margin-top: 70px;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+}
+
+.footer_contacts {
+    margin-top: 70px;
+    position: relative;
+
+
+}
+
+.footer1 {
+    color: #faebd7;
+    margin-left: 0px;
+    margin-left: 150px;
+
+}
+
+.footer2 {
+    color: #faebd7;
+    margin-left: 0px;
+    margin-left: 150px;
+}
+
+footer hr {
+    display: flex;
+    background-image: linear-gradient(to right, transparent, rgba(250, 235, 215, 0.815), transparent);
+    border: 0;
+    height: 2px;
+    margin: px 0 2px 0;box-sizing:
+    content-box;
+    display: block; 
+    width: 100%;
+    justify-content: center; 
+    align-items: center;
+  }
+
+
+h3 {
+    color: #faebd7;
+    font-weight: initlia;
+    font-size: 24px;
+}
+
+img {
+    max-width: 100%;
+    width: 1200px;
+}
+
+.logo {
+    max-width: 100%;
+    width: 100px;
+    margin-right: 200px;
+    justify-content: left;
+}
+
+.selection {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 7px;
+    font-weight: normal;
+    font-weight: lighter;
+    cursor: pointer;
+    color: #faf6d7;
+
+}
+
+/*РАСКРЫТИЕ КАРТИНОК В ОКНЕ*/
+.container .galery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: center;padding: ;
+    
+}
+
+.container .galery .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    margin-top: 20px;
+}
+
+.container .galery .img:hover img {
+    transform: scale(1.1);
+}
+
+.container .popup-image {
+    position: fixed;
+    top:0; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}

@@ -1,0 +1,122 @@
+* {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-seri;
+    font-weight: normal;
+    font-weight: lighter;
+    
+}
+
+.box {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.box_text {
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header li {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    transition: box-shadow .5s;
+    backdrop-filter: blur(4px);
+    -wbkit-backdrop-filter: blur(4px);
+    z-index: 1000;
+    
+}
+
+
+
+header .logotip {
+    color: rgb(250, 235, 215);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-size: 500;
+    transition: .5s;
+    text-decoration: none;
+    }
+
+header .logotip:hover {
+    transform: scale(1.2);
+    color: rgb(189, 155, 212);
+    text-shadow: 11px 10pt 1px rgba(247, 228, 144, 0.9);
+    }
+
+header nav ul li {
+    position: relative;
+    float: left;    
+}
+
+header nav ul li a {
+    padding: 15px;
+    font-size: 16px;
+    display: block;
+    color: rgb(250, 235, 215);
+    text-decoration: none;
+    
+}
+
+.box_text:hover {
+    color: rgb(247, 228, 144);
+    background-color: rgba(58, 60, 68, 0.733);
+    
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: rgba(58, 60, 68, 0.603);
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(29, 30, 34, 0.459);
+    left: -41px;
+    width: 220px;    
+}
+
+nav ul li ul li:hover {
+    color: rgb(247, 228, 144);
+    background-color: rgba(104, 107, 121, 0.397);
+}
+
+
+nav ul li ul li ul {
+    left: 220px;
+    top: 0;
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+.header_mini{
+    background-color:rgba(29, 30, 34, 0.7);
+    box-shadow: 0px 0px 29px -11px rgba(0,0,0,1);
+    transition: box-shadow .5s, padding-bottom;
+}
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgba(29, 30, 34, 0.808);
+    padding-top: 5%;   
+    background-position-y: 0px;
+}

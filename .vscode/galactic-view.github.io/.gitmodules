@@ -1,0 +1,3 @@
+[submodule ".vscode/galactic-view.github.io"]
+	path = .vscode/galactic-view.github.io
+	url = https://github.com/makar96/galactic-view.github.io
