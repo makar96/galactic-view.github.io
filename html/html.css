@@ -385,8 +385,15 @@ img:hover {
  /*  parallax:  */
 
 /*section2 start*/
+
+.section2{
+    background-color: #1e7e3400;
+    height: 700px;
+}
+
+
 .container-section2 {
-    background-color: #1e7e3465;
+    background-color: #1e7e3400;
     width: 100%;
     height: 300px;
     display: flex;
@@ -732,7 +739,18 @@ header nav ul li a {
             
 } 
 
+/*Footer start*/
 
+.footer {
+    background-color: #1e7e3400;
+    margin-top: -500px;
+}
+
+.footer_contacts {
+    background-color: #1e7e3400;
+    margin-top: -150px;
+
+}
 footer hr {
     background-image: linear-gradient(to right, transparent, rgba(250, 235, 215, 0.816), transparent);
     height: 2px;
@@ -748,13 +766,32 @@ footer hr {
     border-image: initial;
 }
 
+.footer_contacts h3{
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-variant: small-caps;
+    font-weight: 50;
+    font-size: 1.8vw;
+    color: #faebd7;
+    margin-left: 150px;
+    margin-top: 20vh;
+}
+.footer_contacts p {
+    font-size: 1.3vw;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-left: -12px;
+}   
+
+
+
+
 .sidepar1 h1 {
     font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-variant: small-caps;
     font-weight: 50;
     font-size: 6vw;
     color: #faebd7;
-    margin-left: 300px;
+    margin-left: 150px;
     margin-top: 20vh;
 }
 
@@ -765,3 +802,4 @@ aside {
     margin-left: 100px;
     margin-top: 100px;
 }
+/*Footer end*/
