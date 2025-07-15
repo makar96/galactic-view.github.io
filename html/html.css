@@ -770,13 +770,13 @@ footer hr {
     font-family: New Century Schoolbook, TeX Gyre Schola, serif;
     font-variant: small-caps;
     font-weight: 50;
-    font-size: 1.8vw;
+    font-size: 1.2vw;
     color: #faebd7;
     margin-left: 150px;
     margin-top: 20vh;
 }
 .footer_contacts p {
-    font-size: 1.3vw;
+    font-size: 0.9vw;
     padding-bottom: 1px;
     padding-top: 1px;
     margin-left: -12px;
