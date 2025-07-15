@@ -584,7 +584,7 @@ img:hover {
 }
 
 .card1:nth-of-type(1) .card-img {
-  background-image: url("/html/Карточки/Amazing-Solar-System.jpg");
+  background-image: url("../html/Карточки/Amazing-Solar-System.jpg");
 }
 
 
