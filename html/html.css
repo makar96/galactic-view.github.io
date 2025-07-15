@@ -17,15 +17,81 @@ body {
     padding-top: 0;   
     background-position-y: 10px;
    /* background-image: url("backgroundfull.jpg");
-    background-size: 100%;
-/*    background-size: calc(100vh - var(--header-height)); */
+    background-size: 100%; */
+/*   background-size: calc(100vh - var(--header-height)); */
     background-repeat:no-repeat;
-    width: 100%;
-    
-    position: relative;
+    width: 100%;    
+
     scroll-padding-top: 100px;
 }
 
+/*Стиль кнопки и модального окна старт*/
+.button_modal {
+    font-size: 20px;
+    width: 120px;
+    height: 40px;
+    color: #faebd7;
+    background-color: #28a745;
+    border-width: 1px;
+    padding: 1px 7px 2px;
+    display: inline-block;
+    border-style: solid;
+    border-radius: 10px;
+    transition: .4s;    
+    cursor: pointer;
+}
+
+.button_modal:hover{
+    background-color: rgb(9, 124, 5);
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Позволяет прокручивать всё окно, если контент большой */
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: rgb(29, 30, 34);
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  max-height: 70vh; /* Ограничиваем по высоте */
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  color: #faebd7;
+}
+
+.modal-body {
+  overflow-y: auto;
+  flex-grow: 1;
+}
+  
+.close {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #faebd7;
+}
+
+/*Стиль кнопки и модального окна конец*/
 
     
 @media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}
@@ -179,7 +245,7 @@ header a {
 /*header start*/
 .container-section1 {
     margin-top: -50px;
-    background-color: #1e7e3400;
+    background-color: #1e7e3473;
     width: 100%;
     height: 500px;
     display: flex;
@@ -388,14 +454,13 @@ img:hover {
 
 .section2{
     background-color: #1e7e3400;
-    height: 700px;
+    height: 600px;
 }
 
 
 .container-section2 {
     background-color: #1e7e3400;
     width: 100%;
-    height: 300px;
     display: flex;
     position: relative;
         /*parallax-effect*/
@@ -500,7 +565,7 @@ img:hover {
   text-align:center;
   float: left;
   display: block;
-  margin-top: -50px;
+  margin-top: 0px;
   overflow: hidden;
   margin-left: 200px;
   margin-bottom: 100px;
@@ -525,7 +590,7 @@ img:hover {
 
 .card2 {
     margin-left: 50px;
-    margin-top: -50px;
+    margin-top: 0px;
     float: left;
     display: block;
     margin-bottom: 100px;
@@ -545,7 +610,7 @@ img:hover {
 
 .card3 {
     margin-left: 50px;
-    margin-top: -50px;
+    margin-top: 0px;
     float: left;
     display: block;
     margin-bottom: 100px;
@@ -553,7 +618,7 @@ img:hover {
 
 .card4{
     margin-left: 50px;
-    margin-top: -50px;
+    margin-top: 0px;
     float: left;
     display: block;
     margin-bottom: 100px;
@@ -610,6 +675,7 @@ p {
     height: 500px;
     display:flex;
     position: relative;
+    margin-top: -100px;
     
         /*parallax-effect*/
     background-attachment: fixed;
