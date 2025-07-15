@@ -69,6 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #faebd7;
+  font-size: 20px;
 }
 
 .modal-body {
@@ -83,6 +84,9 @@ body {
   cursor: pointer;
 }
 
+.modal-content h3{
+    text-align: center;
+}
 
 .close {
   float: right;
