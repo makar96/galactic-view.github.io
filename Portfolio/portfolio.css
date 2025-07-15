@@ -21,7 +21,12 @@ header li {
     list-style: none;
     text-decoration: none;
 }
-
+h3 {
+    margin-top: 300px;
+    text-align: center;
+    font-size: 40px;
+    color: antiquewhite;
+}
 header {
     position: fixed;
     top: 0;
