@@ -735,6 +735,7 @@ p {
     margin-top: -50px;
     text-align: center;
 }
+
 /*Модальное окно для плейера youtube*/
 .modal {
   display: none; 
@@ -749,15 +750,17 @@ p {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgb(29, 30, 34);
   margin: 10% auto; 
   padding: 0;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
   max-width: 800px;
-  position: relative;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
+  text-align: center;
+      align-items: center;
+
 }
 
 .modal-content iframe {
@@ -765,13 +768,18 @@ p {
   height: 450px;
   border: none;
 }
+.close{
+    color: #faebd7;
+    font-size: 40px;
+    padding-left: -100px;
 
+}
 .close-btn {
   color: #aaa;
   position: absolute;
   top: 10px;
   right: 20px;
-  font-size: 30px;
+  font-size: 80px;
   font-weight: bold;
   cursor: pointer;
   z-index: 1001;
