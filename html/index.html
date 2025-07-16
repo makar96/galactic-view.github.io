@@ -9,6 +9,7 @@
     <script defer src="../JavaScript/появление тени при прокрутке.js"></script>
     <script defer src="../JavaScript/Плавная прокрутка до якоря.js"></script>
     <script defer src="../JavaScript/modal_window.js"></script>
+    <script src="https://fontawesome.ru/icon/play-circle/"></script>
     <script defer src="#"></script>
     <!--Модальное окно-->
 <script>
@@ -34,6 +35,48 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 </script>
+
+<!--Модальное окно для плейера-->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const playBtn = document.querySelector('.playBtn');
+    const closeBtn = document.querySelector('.close-btn');
+    const modal = document.getElementById('videoModal');
+    const frameContainer = document.getElementById('videoFrameContainer');
+
+    if (playBtn && modal && frameContainer) {
+        playBtn.addEventListener('click', function () {
+            frameContainer.innerHTML = `
+                <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/DIgkvm2nmHc?si=BDjHskSPgxTSEmkO"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>`;
+            modal.style.display = 'block';
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    function closeModal() {
+        modal.style.display = 'none';
+        frameContainer.innerHTML = ''; // Удаляем iframe, чтобы остановить видео
+    }
+});
+</script>
+
+
+
 
 </head>
 <header id="header2" class="header_mini",align = "center">
@@ -252,32 +295,25 @@ document.addEventListener("DOMContentLoaded", function () {
             </section>            
     <!-- Section4 start -->
      <section>
-            <div class="container-section4">
-                    <h2 class="heading-box1-h2"></h2>
-                    <p class="text-box1-p"></p>            
-                </div>
-            </section>
-    
-
-    
-
-
-
-
-    <!--<div class="firstblock">
-    <div class="sidepar1"><h1>WHAT</h1></div>
-    <div class="sidepar2"><h1>do we know</h1></div>
-    <div class="sidepar3"><h1>about</h1></div>
-    <div class="sidepar4"><h1>SPASE?</h1></div> 
-   <!-- </div>
-        <aside>
-            <div class="button">
-            <a href='#Contents'> 
-                <button class="button"> 
-                    &bigtriangleup; UP
-                </button> 
-            </a>
-            </div>  -->     
+            <div class="container-section4"> 
+            <div class="container-section4-box">     
+            <div class="playBtn">    
+            <svg xmlns="http://www.w3.org/2000/svg" id="play" width="119.91" height="119.91"><path fill="#E74C3C" d="M58.8 10.8c-27.77 0-50.3 22.5-50.3 50.3 0 27.78 22.53 50.3 50.3 50.3 27.8 0 50.32-22.52 50.32-50.3 0-27.8-22.53-50.3-50.3-50.3zm0 97.97c-26.32 0-47.66-21.34-47.66-47.67 0-26.34 21.34-47.68 47.67-47.68 26.37 0 47.7 21.34 47.7 47.67 0 26.3-21.33 47.64-47.66 47.64z"/><path fill="#E74C3C" d="M58.8 21.12c-22.07 0-39.97 17.9-39.97 39.98s17.9 39.98 39.98 39.98c22.1 0 40-17.9 40-39.98s-17.9-39.98-40-39.98zm3.52 50.7L43.77 82.47l.04-21.37.07-21.37 18.5 10.72 18.5 10.72L62.3 71.82z">
+            </svg>
+        </div>
+        <h2 class="heading-box1-h2">Видеотрансляция c МКС</h2>
+        <p class="text-box1-p">Official NASA Stream</p>    
+        <div id="videoContainer" style="display: none; margin-top: 20px;"></div>
+    </div>
+    </div>
+    <!-- Модальное окно -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <div id="videoFrameContainer"></div>
+  </div>
+</div>
+    </section>
 </body>
 <footer class="footer">    
     <hr class="create-line">

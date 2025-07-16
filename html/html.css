@@ -674,7 +674,7 @@ p {
 
 .container-section4{
     margin-top: px;
-    background-color: #1e7e3400;
+    background-color: #1e7e349f;
     width: 100%;
     height: 500px;
     display:flex;
@@ -690,6 +690,97 @@ p {
     row-gap: 4rem;
 
 }
+
+
+
+/**/
+.container-section4-box {
+    width: 100%;
+    height: 100%;
+    background-color: #0202026e;
+}
+
+
+.container-section4-box .heading-box1-h2 {
+    background-color: #b6c4b900;
+    height: 80px;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;   
+}
+
+
+.container-section4-box .playBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    cursor: pointer;
+}
+
+
+.container-section4 .text-box1-p{
+    width: 50%; 
+    margin: 0 auto;
+    height: 20px;
+    background-color: #1e7e3400;
+    color: #faebd7;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    text-align: center;
+}
+/*Модальное окно для плейера youtube*/
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; 
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-content iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.close-btn {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
 
 
 
@@ -726,7 +817,6 @@ body .firstblock {
         height: 40vh;
     }
     }
-
 @media screen and (max-width: 700px) {
         body .firstblock {
             height: 30vh;
