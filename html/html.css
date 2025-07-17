@@ -648,6 +648,14 @@ img:hover {
     color: var(--color);
     row-gap: 4rem
 }
+
+@media screen and (max-width: 500px) {
+    .container-section2 {  
+        background-size: 800px;
+           }            
+}
+
+
 .container-section2 .container-section2-color {
     background-color: #1d212457;
     width: 100%;
@@ -743,7 +751,7 @@ img:hover {
 
 .section3 {
     background-color: #28a74600;
-    height: 600px;
+    height: 1000px;
     }
 
 .container-section3{
@@ -753,8 +761,8 @@ img:hover {
   padding: 6rem 0;
   background-image: url();
   gap: 1.6em;
-  height: 400px;
-}
+  height: 750px;
+    }
 
 
 .card1 {
@@ -771,9 +779,19 @@ img:hover {
   display: block;
   margin-top: 0px;
   overflow: hidden;
-  margin-left: 200px;
-  margin-bottom: 100px;
+  margin-left: 100px;
 }
+
+@media screen and (max-width: 500px) {
+    .card1 {  
+        width: 160px;
+        margin-bottom: 10px;
+        margin: auto;
+        margin-left: 10px;
+        margin-top: -50px;
+                }            
+}
+
 
 .card-img {
   width: 100%;
@@ -793,19 +811,37 @@ img:hover {
 }
 
 .card2 {
-    margin-left: 50px;
     margin-top: 0px;
-    float: left;
-    display: block;
-    margin-bottom: 100px;
+    float:right;
+}
+
+@media screen and (max-width: 500px) {
+    .card2 {  
+        width: 160px;
+        margin-left: 50px;
+        margin:auto;
+        margin-top: -50px;
+        }            
 }
 
 .card3 p{
     padding-top: -80px;
 }
 
+@media screen and (max-width: 500px) {
+    .card1 p {  
+        font-size: 10px;
+                  }            
+}
+
 .card3 h3{
     height: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .card1 h3 {  
+        font-size: 15px;
+    }            
 }
 
 .card3:nth-of-type(3) .card-img {
@@ -820,6 +856,16 @@ img:hover {
     margin-bottom: 100px;
 }
 
+@media screen and (max-width: 500px) {
+    .card3 {  
+        width: 160px;
+        margin-bottom: 10px;
+        margin: auto;
+        margin-left: 10px;
+        margin-top: 10px;
+                }            
+}
+
 .card4{
     margin-left: 50px;
     margin-top: 0px;
@@ -827,6 +873,21 @@ img:hover {
     display: block;
     margin-bottom: 100px;
 }
+
+@media screen and (max-width: 500px) {
+    .card4 {  
+        height: 415px;
+        width: 160px;
+        margin-left: 80px;
+        margin:auto;
+        margin-top: 10px;
+        float: right
+                }            
+}
+
+.card4 .btn-box1-a {
+    margin-top: 25px;
+                }
 
 .card4 h3{
     height: 10px;
@@ -856,8 +917,14 @@ p {
     background-color: rgb(29, 30, 34);
     border-color: #000e03;
     transition: .5s;
-
 }
+
+@media screen and (max-width: 500px) {
+    .container-section3 .btn-box1-a {  
+        font-size: 10px;    
+    }            
+}
+
 
 .btn-box1-a:hover{
     color:rgb(29, 30, 34);
@@ -876,7 +943,7 @@ p {
     margin-top: px;
     background-color: #1e7e3400;
     width: 100%;
-    height: 500px;
+    height: 350px;
     display:flex;
     position: relative;
     margin-top: -100px;
@@ -891,15 +958,13 @@ p {
 
 }
 
-
-
 /**/
+
 .container-section4-box {
     width: 100%;
     height: 100%;
-    background-color: #0202026e;
+    background-color: #02020200;
 }
-
 
 .container-section4-box .heading-box1-h2 {
     background-color: #b6c4b900;
@@ -914,6 +979,11 @@ p {
     font-weight: 400;   
 }
 
+@media screen and (max-width: 500px) {
+    .container-section4-box .heading-box1-h2 {  
+        font-size: 30px;        
+                }            
+}
 
 .container-section4-box .playBtn {
     display: flex;
@@ -923,6 +993,12 @@ p {
     cursor: pointer;
 }
 
+@media screen and (max-width: 500px) {
+    .container-section4-box .playBtn {  
+        margin-top: 70px;      
+        
+                }            
+}
 
 .container-section4 .text-box1-p{
     width: 50%; 
@@ -935,6 +1011,16 @@ p {
     margin-top: -50px;
     text-align: center;
 }
+
+@media screen and (max-width: 500px) {
+    .container-section4 .text-box1-p {  
+        font-size: 20px;
+        background-color: #28a74600;
+        width: 300px;
+        margin-top: -60px;   
+         }            
+}
+
 /*Модальное окно для плейера youtube*/
 .modal {
   display: none; 
@@ -980,13 +1066,6 @@ p {
 .close-btn:hover {
   color: #000;
 }
-
-
-<<<<<<< HEAD
-
-
-
-
 
 @media screen and (max-width: 1500px) {
 body .firstblock {
@@ -1095,13 +1174,17 @@ header nav ul li a {
 
 
 
-=======
->>>>>>> 9d2f536680d2cd158604ebd2ac802913aafa5f46
 /*Footer start*/
 
 .footer {
     background-color: #1e7e3400;
     margin-top: -500px;
+    height: 200px;
+        }
+@media screen and (max-width: 500px) {
+    .footer {  
+        margin-top: -680px;    
+                }            
 }
 
 .footer_contacts {
@@ -1133,12 +1216,33 @@ footer hr {
     margin-left: 150px;
     margin-top: 20vh;
 }
+
+@media screen and (max-width: 500px) {
+    .footer_contacts h3 {  
+        font-size: 20px;   
+    }            
+}
+
 .footer_contacts p {
     font-size: 0.9vw;
     padding-bottom: 1px;
     padding-top: 1px;
     margin-left: -12px;
 }   
+
+@media screen and (max-width: 500px) {
+    .footer_contacts p {  
+        padding-top: 4px;
+        margin-top: 50px;
+        font-size: 10px;   
+        background-color: #28a74600;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: auto;
+        margin-left: -100px;     
+            }            
+}
 
 
 
