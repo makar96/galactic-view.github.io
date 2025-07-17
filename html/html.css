@@ -326,7 +326,7 @@ header a {
     .container-section1  {  
         background-color: #1e7e3400;
         height: 350px;
-        background-size: 900px;
+        background-size: 700px;
                                     }
             
 }
@@ -669,13 +669,13 @@ img:hover {
     .caption2 .box-h2  {  
         font-size: 25px;
         margin-left: px;   
-        margin-top: 20px;    
+        margin-top: 50px;    
         height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
-        background-color: #28a745;
+        width: 350px;
+        background-color: #28a74600;
     }            
 }
 
@@ -684,7 +684,13 @@ img:hover {
     color:  #faebd7;
     font-weight: 100;
     text-align: center;
-    margin-left: -50px;
+    margin-left: -50px;card1
+}
+
+@media screen and (max-width: 500px) {
+    .caption2 .container-section2-ul   {  
+        margin-top: -20px;
+    }            
 }
 
 .caption2 ul li {
@@ -695,13 +701,26 @@ img:hover {
     margin-left: -50px;
 }
 
-
 .caption2 ul li a {
     color: #faebd7;
     padding-bottom: 10px;
     list-style-position: inside;
     font-size: 1.4rem;
+    text-decoration: none;
 }  
+
+@media screen and (max-width: 500px) {
+    .caption2 ul li a  {  
+        font-size: 15px;
+        margin-left: px;     
+        height: 30px;
+        display:block
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        background-color: #28a74600;
+    }            
+}
 
 .caption2 ul li:hover{
     transform: translateX(6px);
