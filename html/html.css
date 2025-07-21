@@ -782,10 +782,9 @@ img:hover {
   box-shadow: 0 29px 38px -15px rgb(0 0 0 / 43%);
   text-align:center;
   float: left;
-  display: block;
-  margin-top: 0px;
+  display: flex;
   overflow: hidden;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 @media screen and (max-width: 500px) {
@@ -817,7 +816,7 @@ img:hover {
 
 .card2 {
     margin-top: 0px;
-    float:left;
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 500px) {
@@ -860,6 +859,7 @@ img:hover {
     float: left;
     display: block;
     margin-bottom: 100px;
+    height: 490px;
 }
 
 @media screen and (max-width: 500px) {
