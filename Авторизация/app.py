@@ -25,7 +25,10 @@ init_db()
 
 @app.route("/register", methods=["POST"])
 def register():
-    data = request.json
+    data = request.get_json()
+    if not data:
+        return jsonify(success=False, error="Нет данных"), 400
+
     username = data.get("username")
     password = data.get("password")
     if not username or not password:
@@ -35,6 +38,7 @@ def register():
     cur = conn.cursor()
     cur.execute("SELECT id FROM users WHERE username=?", (username,))
     if cur.fetchone():
+        conn.close()  # ❗ важно закрыть соединение
         return jsonify(success=False, error="Пользователь уже существует"), 409
 
     password_hash = generate_password_hash(password)
@@ -45,9 +49,14 @@ def register():
 
 @app.route("/login", methods=["POST"])
 def login():
-    data = request.json
+    data = request.get_json()
+    if not data:
+        return jsonify(success=False, error="Нет данных"), 400
+
     username = data.get("username")
     password = data.get("password")
+    if not username or not password:
+        return jsonify(success=False, error="Все поля обязательны"), 400
 
     conn = sqlite3.connect("users.db")
     cur = conn.cursor()

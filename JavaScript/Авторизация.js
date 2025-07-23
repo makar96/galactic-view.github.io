@@ -11,7 +11,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
   const username = document.getElementById("loginUsername").value;
   const password = document.getElementById("loginPassword").value;
 
-  const res = await fetch("http://localhost:5000/login", {
+  const res = await fetch("http://127.0.0.1:5000/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include", // важно для сессии!
@@ -20,7 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
   const data = await res.json();
   if (res.ok && data.success) {
-    window.location.href = "C:/Users/kiris/OneDrive/Desktop/Makar/Разработка/Проект%20по%20Космосу/Portfolio/Portfolio.html";  // или dashboard
+    window.location.href = "../../Portfolio/portfolio.html";  // или другой относительный путь
   } else {
     document.getElementById("loginError").innerText = data.error || "Ошибка входа";
   }
@@ -32,7 +32,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
   const username = document.getElementById("registerUsername").value;
   const password = document.getElementById("registerPassword").value;
 
-  const res = await fetch("http://localhost:5000/register", {
+  const res = await fetch("http://127.0.0.1:5000/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password })
