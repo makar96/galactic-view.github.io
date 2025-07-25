@@ -373,6 +373,7 @@ h2 {
 .container-section1-text {
     background-color: #28a74600;
     height: 350px;
+    width: 700px;
 }
 
 @media screen and (max-width: 500px) {
@@ -663,11 +664,10 @@ img:hover {
 
 .box-h2 {
     margin-top: 200px;  
-
+    font-size: 50px;
 }
 
 .caption2 .box-h2 {
-    font-size: 2.7rem;
     font-weight: 100;
     margin-top: 60px;
     text-align: center;
